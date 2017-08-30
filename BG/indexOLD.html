@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Everyone is getting their chances to win their dream trip with Expedia’s Trip a Day Giveaway. A new winner everyday!">
+<meta property="og:image" content="http://viewfinder.expedia.com/trip-a-day-giveaway/img/fb_200x200.jpg?v=666"/>
+<meta property="og:image:type" content="image/jpg"> 
+<title>Mr. Peabody and Sherman Travel the World Sweepstakes</title>
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+<style>
+#wrapper header {
+	background:#FFF;
+}
+
+#wrapper .header {
+    background: url("/img/header_bg_ie8.jpg") no-repeat scroll right top !important;
+    background:#cccccc;
+}
+</style>
+<![endif]-->
+<script src="js/jquery.lightbox_me.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+function newPopup(url) {
+            popupWindow = window.open(
+                                url, 'popUpWindow',
+                'height=740,width=760,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no')
+        }
+
+//Tests for a CID, returns CID.
+function readCID(){
+	var uriVars = location.search.split("&");
+	var cidVal = null;
+	if(uriVars.length > 0){
+		for(var i =0; i < uriVars.length; i++){
+			if(uriVars[i].match(/cid=/)){
+				var set = uriVars[i].split("=");
+				cidVal = set[1];
+			}
+		}
+	}
+	return (cidVal != null)? cidVal:'BRAND';
+}
+
+//Injects CID into Appstore buttons.
+function setAppStoreURLs(cidCode){
+	var anchorSet = $("div.downloadbtns a");	
+	for(var j = 0; j < anchorSet.length; j++){
+
+		var hrefStr = $(anchorSet[j]).attr("href");
+		$(anchorSet[j]).attr("href",hrefStr.replace("VIEWFINDERTADG13.BRAND","VIEWFINDERTADG13."+cidCode));
+	}
+}
+
+jQuery(document).ready(function(){
+	setAppStoreURLs(readCID());
+    // $(".column").height(Math.max($(col1).height(), $(col2).height()));
+});
+
+</script>
+</head>
+
+<body>
+<div id="stopper">
+
+<!-- begin expedia.com nav container-->
+<div class="exp-nav-container">
+	<!-- begin expedia nav -->
+    <div class="exp-nav">
+    	<!-- begin expedia menu button -->
+        <div class="exp-menu-button"></div>
+        <!-- end expedia menu button -->
+        
+    	<!-- begin expedia logo -->
+        <a data-tid="header-logo" data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.ExpediaLogo')" class="exp-logo" href="http://www.expedia.com">Expedia.com</a>
+        <!-- end expedia logo -->
+        <!-- begin menu -->
+        <ul class="exp-menu">
+        	<li>
+                <a id="header-shop-menu" data-tid="header-shop-menu" data-control="menu" data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.ShopHeading'); return false;"><p>Shop</p><span class="exp-icon"></span></a>
+                <ol class="exp-drop-menu">
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Flights')" href="http://www.expedia.com/Flights" data-tid="header-shop-flights" id="header-shop-flights">Flights</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Hotels')" href="http://www.expedia.com/Hotels" data-tid="header-shop-hotels" id="header-shop-hotels">Hotels</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.VacationPackages')" href="http://www.expedia.com/Vacation-Packages" data-tid="header-shop-packages" id="header-shop-packages">Vacation Packages</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Cars')" href="http://www.expedia.com/Cars" data-tid="header-shop-cars" id="header-shop-cars">Cars</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Cruises')" href="http://www.expedia.com/Cruises" data-tid="header-shop-cruises" id="header-shop-cruises">Cruises</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.ThingsToDo')" href="http://www.expedia.com/Activities" data-tid="header-shop-activities" id="header-shop-activities">Things to Do</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Deals')" href="http://www.expedia.com/Deals" data-tid="header-shop-deals" id="header-shop-deals">Deals</a></li>
+                	<li class="last"><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Groupon')" href="http://www.expedia.com/p/info-other/groupon-tab.htm" data-tid="header-shop-groupon" id="header-shop-groupon">Groupon Getaways</a></li>
+                </ol>
+            </li>
+            <div class="exp-float">
+            <li>
+                <a rel="nofollow" data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.AccountHeading'); return false;" data-control="menu" data-tid="header-account-menu" id="header-account-menu" class="exp-trigger"><p>Account</p><span class="exp-icon"></span></a>
+                <ol class="exp-drop-menu exp-right">
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Signin')" rel="nofollow" href="http://www.expedia.com/pubspec/scripts/eap.asp?GOTO=LOGIN" data-tid="header-account-signin" id="header-account-signin">Sign In</a></li>
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.CreateAccount')" rel="nofollow" href="http://www.expedia.com/pub/agent.dll?qscr=logi&amp;selc=1" data-tid="header-account-register" id="header-account-register">Create an Account</a></li>
+                	<li class="last"><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Rewards')" rel="nofollow" href="http://www.expedia.com/daily/highlights/rewards.asp" data-tid="header-account-rewards" id="header-account-rewards">Rewards</a></li>
+                </ol>
+            </li>
+            <li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.MyItineraries')" data-tid="header-itineraries" href="http://www.expedia.com/itinerary-list">Itineraries</a></li>
+            <li>
+                <a rel="nofollow" data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.SupportHeading'); return false;" data-control="menu" data-tid="header-support-menu" id="header-support-menu" class="exp-trigger"><p>Support</p><span class="exp-icon"></span></a>
+                <ol class="exp-drop-menu exp-right">
+                	<li><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.CustSupport')" rel="nofollow" href="http://support.expedia.com/" data-tid="header-support-cs" id="header-support-cs">Customer Support</a></li>
+                	<li class="last"><a data-onclick="xp.nav.trackAnalytics(this,'a','Header.US.Feedback');headerFeedback();return false;" rel="nofollow" href="https://secure.opinionlab.com/ccc01/comment_card.asp" data-tid="header-support-feedback" id="header-support-feedback">Feedback</a></li>
+                </ol>
+            </li>
+            </div>
+        </ul>
+        <!-- end menu -->
+    </div>
+	<!-- end expedia nav -->
+</div>
+<!-- end expedia.com nav container-->
+
+<!-- Begin Content Area -->
+<div id="wrapper">
+	<header>
+    	<div class="header">
+            	<h1>
+			    <img src="img/header.png" alt="Mr. Peabody &amp; Sherman" id="overlaylink" /> </h1>
+				<p>Enter here to win a chance to travel the globe like Mr. Peabody and Sherman. One entry per person per day. Return daily and enter again! <span class="requiredtext"><em>*All fields required</em></span></p> 
+            <div id="formstack_form">
+            	<iframe src="form.html" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" class="form_frame" onLoad="detectThankyouPage(this.contentWindow.location);"></iframe>
+    	    
+            </div>
+        </div>
+    </header>
+    	<div class="contentarea_wrapper">
+            <div class="contentarea">
+            <h1><img src="img/ahd_grand_prize.png" width="169" height="35" alt="Grand Prize" /></h1>
+            <p>A round trip for two people to the winner's choice of France, Greece, or Italy, including airfare and a $500 cash card. Estimated retail prize value $5,500.</p>
+            <ul>
+                <li><img src="img/city01.jpg" alt="Italy" /></li>
+                <li><img src="img/city02.jpg" alt="France" /></li>
+                <li><img src="img/city03.jpg" alt="Greece" /></li>
+            </ul>
+            <h1><img src="img/ahd_first_prize.png" width="148" height="36" alt="First Prize" /></h1>
+            <p>A special film screening of Mr. Peabody and Sherman in the winner's hometown. Includes access for up to 100 of the winner's friends. Estimated retail prize value $1,000.</p>
+            <p class="disclaimer">Mr Peabody & Sherman © 2014 DreamWorks Animation LLC. Character Rights TM & © Ward Productions, Inc. Licensed by Bullwinkle Studios, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+<!-- End Content Area -->  
+<!-- Begin Overlay Area -->
+
+	<div class="overlay" id="overlay">
+   		<div class="leftcol"><img src="img/overlay_img.png" alt=" " /></div>
+        <div class="rightcol"><img src="img/overlay_h1.png" alt="Entry Successfully Submitted" />
+        <p>Thank you for entering the Mr. Peabody and Sherman travel sweepstakes. <strong>Return daily and enter again!</strong></p>
+        </div>
+        <ul>
+        	<li class="overlaylogo01"><a href="http://www.expedia.com/"><img src="img/overlay_expedia_logo.png" alt="Expedia" /></a></li>
+            <li class="overlaylogo02"><a id="close_x" class="close sprited" href="#"><img src="img/overlay_sweepstakes_home.png" alt="Sweepstakes Home" /></a></li>
+            <li class="overlaylogo03"><a href="http://www.movietickets.com/"><img src="img/overlay_movie_tickets.png" alt="Movie Tickets.com" /></a></li>
+        </ul>
+     </div>
+<!-- End Overlay Area -->
+
+<!-- begin expedia footer -->
+<div id="site-footer-background" class="site-footer-background">
+<div id="site-footer-wrap" class="site-footer-wrap cols-nested"> 
+    <div class="logo-wrap">
+        <span id="footer-logo" class="logo">Expedia</span>
+    </div>
+ 
+<div class="site-footer cf sub-footer">
+<div>
+    <ul id="expedia-links" class="expedia-links">
+        <li><a class="footer-link" href="http://mediaroom.expedia.com/about-expediacom-180" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">About Expedia</a></li>
+        <li><a class="footer-link" href="http://www.expedia.com/daily/highlights/rewards.asp" onclick="xp.nav.trackAnalytics(this,'a','Footer.LocalLinks')">Rewards</a></li>
+        <li><a class="footer-link" href="http://www.expediajobs.com/" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Jobs</a></li>
+        <li><a class="footer-link" href="http://investors.expediainc.com/phoenix.zhtml?c=190013&amp;p=irol-irhome" rel="nofollow" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Investor Relations</a></li>
+        <li><a class="footer-link" href="http://www.advertising.expedia.com/en-us/Pages/default.aspx" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Advertising</a></li>
+        <li><a class="footer-link" href="http://mediaroom.expedia.com/" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Media Room</a></li>
+        <li><a class="footer-link" href="javascript:void(0);" data-onclick="window.open('http://www.expedia.com/daily/service/aboutourads.asp','AboutOurAds','scrollbars=yes,status=no,toolbar=yes,resizable=yes,width=480,height=620');xp.nav.trackAnalytics(this,'a','Footer.CorporateLink');return false;" rel="nofollow">About Our Ads</a></li>
+        <li><a class="footer-link" href="http://www.expedia.com/daily/service/privacy.asp" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Privacy Policy</a></li>
+        <li><a class="footer-link" href="http://www.expedia.com/daily/service/legal.asp" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Terms of Use</a></li>
+        <li><a class="footer-link" href="http://www.expedia.com/p/info-other/sitemap" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.CorporateLink')">Site Map</a></li>
+        
+        
+    </ul>
+</div>
+
+<ul class="segmented-list">
+    	<li class="toggle open">
+<a href="#tripPlanning" aria-controls="tripPlanning" class="toggle-trigger" data-control="toggle">Trip Planning&nbsp;<span class="icon icon-expand"></span></a>
+<div id="tripPlanning" class="toggle-pane" role="region" aria-expanded="true">
+<div class="toggle-inner">
+	    
+<div class="trip-planning-links">
+    <div id="featured-hotel" class="cols-row cf">
+        <div class="col links-description">
+            <h5>Featured Hotel Destinations</h5>
+            <p>Expedia works hard to secure the best hotel rates in the 
+most popular destinations. Browse hotels by destination to get started 
+and check out our hotel reviews, written by customers just like you.</p>
+        </div>
+        <div class="col links-list">
+            <ul class="cf">
+                <li><a href="http://www.expedia.com/Sydney-Hotels.d178312.Travel-Guide-Hotels">Sydney Hotels</a></li>
+                <li><a href="http://www.expedia.com/Boston-Hotels.d178239.Travel-Guide-Hotels">Boston Hotels</a></li>
+                <li><a href="http://www.expedia.com/Walt-Disney-World-Orlando-Hotels.0-n6034436-0.Travel-Guide-Filter-Hotels">Walt Disney World Area Hotels</a></li>
+                <li><a href="http://www.expedia.com/Las-Vegas-Hotels.d178276.Travel-Guide-Hotels">Las Vegas Hotels</a></li>
+                <li><a href="http://www.expedia.com/Maui-Island-Hotels.d180073.Travel-Guide-Hotels">Maui Hotels</a></li>
+                <li><a href="http://www.expedia.com/New-York-Hotels.d178293.Travel-Guide-Hotels">New York Hotels</a></li>
+                <li><a href="http://www.expedia.com/San-Francisco-Hotels.d178305.Travel-Guide-Hotels">San Francisco Hotels</a></li>
+                <li><a href="http://www.expedia.com/Grand-Canyon-Hotels.d6140738.Travel-Guide-Hotels">Grand Canyon Hotels</a></li>
+                <li><a href="http://www.expedia.com/London-Hotels.d178279.Travel-Guide-Hotels">London Hotels</a></li>
+                <li><a href="http://www.expedia.com/Paris-Hotels.d179898.Travel-Guide-Hotels">Paris Hotels</a></li>
+                <li><a href="http://www.expedia.com/Cancun-Hotels.d179995.Travel-Guide-Hotels">Cancun Hotels</a></li>
+                <li><a href="http://www.expedia.com/Playa-Del-Carmen-Riviera-Maya-Hotels.0-n9369-0.Travel-Guide-Filter-Hotels">Playa Del Carmen Hotels</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-flight-destinations" class="cols-row cf">
+        <div class="col links-description">
+            <h5>Top Flight Destinations</h5>
+            <p>It's easy to book a low-cost flight anywhere in the world with Expedia. Check out fares on flights to our top destinations.</p>
+        </div>
+        <div class="col links-list">
+            <ul class="cf">
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-New-York.d178293.Travel-Guide-Flights">Flights to New York</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Las-Vegas.d178276.Travel-Guide-Flights">Flights to Las Vegas</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Los-Angeles.d178280.Travel-Guide-Flights">Flights to Los Angeles</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Orlando.d178294.Travel-Guide-Flights">Flights to Orlando</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Miami.d178286.Travel-Guide-Flights">Flights to Miami</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-San-Francisco.d178305.Travel-Guide-Flights">Flights to San Francisco</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Chicago.d178248.Travel-Guide-Flights">Flights to Chicago</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Boston.d178239.Travel-Guide-Flights">Flights to Boston</a></li>
+                <li><a href="http://www.expedia.com/Cheap-Flights-To-Vancouver.d178315.Travel-Guide-Flights">Flights to Vancouver</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-rental-car-locations" class="cols-row cf">
+        <div class="col links-description">
+            <h5>Top Rental Car Locations</h5>
+            <p>Booking a rental car anywhere in the world couldn't be 
+simpler with Expedia. Browse below to find the best deals in some of our
+ top locations.</p>
+        </div>
+        <div class="col links-list">
+            <ul class="cf">
+                <li><a href="http://www.expedia.com/Car-Rentals-In-Toronto.d178314.Car-Rental-Guide">Toronto Car Rental</a></li>
+                <li><a href="http://www.expedia.com/Car-Rentals-In-Vancouver.d178315.Car-Rental-Guide">Vancouver Car Rental</a></li>
+                <li><a href="http://www.expedia.com/Car-Rentals-In-Denver.d178254.Car-Rental-Guide">Denver Car Rental</a></li>
+                <li><a href="http://www.expedia.com/Car-Rentals-In-New-York.d178293.Car-Rental-Guide">New York Car Rental</a></li>
+                <li><a href="http://www.expedia.com/Car-Rentals-In-Honolulu.d1488.Car-Rental-Guide">Honolulu Car Rental</a></li>
+                <li><a href="http://www.expedia.com/daily/cars/dallas-car-rental.asp">Dallas Car Rental</a></li>
+                <li><a href="http://www.expedia.com/daily/cars/New-Orleans-car-rental.asp">New Orleans Car Rental</a></li>
+                <li><a href="http://www.expedia.com/Car-Rentals-In-Reno.d602688.Car-Rental-Guide">Reno Car Rental</a></li>
+                <li><a href="http://www.expedia.com/Car-Rentals-In-San-Antonio.d178303.Car-Rental-Guide">San Antonio Car Rental</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="popular-vacation-destinations" class="cols-row cf">
+        <div class="col links-description">
+            <h5>Popular Vacation Destinations</h5>
+            <p>It's easy to shop our featured cities for the top travel deals. And for great vacation values, check out our <a href="http://www.expedia.com/All-Inclusive-Vacations">All-Inclusive Vacations</a>.</p>
+        </div>
+        <div class="col links-list">
+            <ul class="cf">
+                <li><a href="http://www.expedia.com/Las-Vegas.d178276.Destination-Travel-Guides">Las Vegas Vacations</a></li>
+                <li><a href="http://www.expedia.com/Orlando.d178294.Destination-Travel-Guides">Orlando Vacations</a></li>
+                <li><a href="http://www.expedia.com/New-York.d178293.Destination-Travel-Guides">New York Vacations</a></li>
+                <li><a href="http://www.expedia.com/Miami.d178286.Destination-Travel-Guides">Miami Vacations</a></li>
+                <li><a href="http://www.expedia.com/San-Diego.d178304.Destination-Travel-Guides">San Diego Vacations</a></li>
+                <li><a href="http://www.expedia.com/San-Francisco.d178305.Destination-Travel-Guides">San Francisco Vacations</a></li>
+                <li><a href="http://www.expedia.com/Los-Angeles.d178280.Destination-Travel-Guides">Los Angeles Vacations</a></li>
+                <li><a href="http://www.expedia.com/New-Orleans.d178292.Destination-Travel-Guides">New Orleans Vacations</a></li>
+                <li><a href="http://www.expedia.com/Vancouver.d178315.Destination-Travel-Guides">Vancouver Vacations</a></li>
+                <li><a href="http://www.expedia.com/Boston.d178239.Destination-Travel-Guides">Boston Vacations</a></li>
+                <li><a href="http://www.expedia.com/Seattle.d178307.Destination-Travel-Guides">Seattle Vacations</a></li>
+                <li><a href="http://www.expedia.com/Honolulu.d1488.Destination-Travel-Guides">Honolulu Vacations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="popular-cruises" class="cols-row cf">
+        <div class="col links-description">
+            <h5>Popular Cruises</h5>
+            <p>Get away by finding some of the best deals on cruises anywhere in the world.</p>
+        </div>
+        <div class="col links-list">
+            <ul class="cf">
+                <li><a href="http://cruise.expedia.com/Search.aspx?ds=Caribbean">Caribbean Cruises</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?ds=Bahamas">Bahamas Cruises</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?ds=Mexico">Mexico Cruises</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?ds=Europe">Europe Cruises</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?ds=Alaska">Alaska Cruises</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?ds=Hawaii">Hawaii Cruises</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?dp=Miami%2c+Florida">Cruises From Miami</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?dp=New+York%2c+New+York">Cruises From New York</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?dp=Galveston%2c+Texas">Cruises From Galveston</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?dp=Tampa%2c+Florida">Cruises From Tampa</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?dp=New+Orleans%2c+Louisiana">Cruises From New Orleans</a></li>
+                <li><a href="http://cruise.expedia.com/Search.aspx?dp=Baltimore%2c+Maryland">Cruises From Baltimore</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer-links-note" class="cols-row aside cf">
+        <p>*Savings based on all vacation package bookings with Flight + Hotel on Expedia.com in 2011, as compared to price of the same components booked separately. Savings will vary based on origin/destination, length of trip, stay dates and selected travel supplier(s). Savings not available on all packages.</p>
+    </div>
+</div>	    </div>
+</div>
+</li>
+<li class="toggle open">
+<a href="#partnerServices" aria-controls="partnerServices" class="toggle-trigger" data-control="toggle">Partner Services&nbsp;<span class="icon icon-expand"></span></a>
+<div id="partnerServices" class="toggle-pane" role="region" aria-expanded="true">
+<div class="toggle-inner">
+    
+        <div>
+            <ul id="partner-service-links" class="partner-service-links">
+                <li><a class="footer-link" href="https://joinexpedia.com/us/us.asp" rel="nofollow" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Add a Hotel</a></li>
+                <li><a class="footer-link" href="http://access.expedia.com/" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Become an Affiliate</a></li>
+                <li><a class="footer-link" href="http://access.expedia.com/Home/TravelAgentOverview" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Travel Agents Affiliate Program</a></li>
+                <li><a class="footer-link" href="http://www.expediaaffiliate.com/private-label-xml.html" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Expedia Private Label</a></li>
+                <li><a class="footer-link" href="http://www.expedia.com/p/info-rewards/cobrand_card_compare.htm?lytid=cb.link.footer&amp;citiCode=28X" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Expedia MasterCard</a></li>
+                <li><a class="footer-link" href="http://www.expediafranchise.com/" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Expedia Franchise</a></li>
+                <li><a class="footer-link" href="http://www.joinecsc.com/" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.PartnerService')">Expedia CruiseShipCenters Agent</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</li>
+<li class="toggle open">
+<a href="#globalSites" aria-controls="globalSites" class="toggle-trigger" data-control="toggle">Global Sites&nbsp;<span class="icon icon-expand"></span></a>
+<div id="globalSites" class="toggle-pane" role="region" aria-expanded="true">
+<div class="toggle-inner">
+    
+        <div>
+            <ul id="global-sites-list" class="global-sites-list">
+                 <li><a href="http://www.expedia.com.ar/" title="Expedia.com.ar" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag ar"></span> Argentina</a></li>
+                 <li><a href="http://www.expedia.at/" title="Expedia.at" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag at"></span> Austria</a></li>
+                 <li><a href="http://www.expedia.com.au/" title="Expedia.com.au" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag au"></span> Australia</a></li>
+                 <li><a href="http://www.expedia.be/" title="Expedia.be" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag be"></span> Belgium</a></li>
+                 <li><a href="http://www.expedia.com.br/" title="Expedia.com.br" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag br"></span> Brazil</a></li>
+                 <li><a href="http://www.expedia.ca/" title="Expedia.ca" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag ca"></span> Canada</a></li>
+                 <li><a href="http://www.expedia.dk/" title="Expedia.dk" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag dk"></span> Denmark</a></li>
+                 <li><a href="http://www.expedia.fr/" title="Expedia.fr" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag fr"></span> France</a></li>
+                 <li><a href="http://www.expedia.de/" title="Expedia.de" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag de"></span> Germany</a></li>
+                 <li><a href="http://www.expedia.com.hk/" title="Expedia.com.hk" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag hk"></span> Hong Kong</a></li>
+                 <li><a href="http://www.expedia.co.in/" title="Expedia.co.in" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag in"></span> India</a></li>
+                 <li><a href="http://www.expedia.co.id/" title="Expedia.co.id" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag ind"></span> Indonesia</a></li>
+                 <li><a href="http://www.expedia.ie/" title="Expedia.ie" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag ie"></span> Ireland</a></li>
+                 <li><a href="http://www.expedia.it/" title="Expedia.it" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag it"></span> Italy</a></li>
+                 <li><a href="http://www.expedia.co.jp/" title="Expedia.co.jp" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag jp"></span> Japan</a></li>
+                 <li><a href="http://www.expedia.co.kr/" title="Expedia.co.kr" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag kr"></span> Korea</a></li>
+                 <li><a href="http://www.expedia.com.my/" title="Expedia.com.my" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag my"></span> Malaysia</a></li>
+                 <li><a href="http://www.expedia.mx/" title="Expedia.mx" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag mx"></span> Mexico</a></li>
+                 <li><a href="http://www.expedia.nl/" title="Expedia.nl" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag nl"></span> Netherlands</a></li>
+                 <li><a href="http://www.expedia.nz/" title="Expedia.co.nz" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag nz"></span> New Zealand</a></li>
+                 <li><a href="http://www.expedia.no/" title="Expedia.no" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag no"></span> Norway</a></li>
+                 <li><a href="http://www.expedia.com.ph/" title="Expedia.com.ph" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag ph"></span> Philippines</a></li>
+                 <li><a href="http://www.expedia.sg/" title="Expedia.sg" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag sg"></span> Singapore</a></li>
+                 <li><a href="http://www.expedia.es/" title="Expedia.es" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag es"></span> Spain</a></li>
+                 <li><a href="http://www.expedia.se/" title="Expedia.se" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag se"></span> Sweden</a></li>
+                 <li><a href="http://www.expedia.com.tw/" title="Expedia.com.tw" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag tw"></span> Taiwan</a></li>
+                 <li><a href="http://www.expedia.co.th/" title="Expedia.co.th" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag th"></span> Thailand</a></li>
+                 <li><a href="http://www.expedia.co.uk/" title="Expedia.co.uk" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag uk"></span> United Kingdom</a></li>
+                 <li><a href="http://www.expedia.com.vn/" title="Expedia.com.vn" data-onclick="xp.nav.trackAnalytics(this,'a','Footer.AllSites')"><span class="flag vn"></span> Vietnam</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</li>
+    <li class="toggle open">
+<a href="#otherLinks" aria-controls="otherLinks" class="toggle-trigger" data-control="toggle">Other links&nbsp;<span class="icon icon-expand"></span></a>
+<div id="otherLinks" class="toggle-pane" role="region" aria-expanded="true">
+<div class="toggle-inner">
+    
+        <div id="other-links-wrap">
+            <ul id="other-links" class="other-links">
+                <li><a class="footer-link" href="http://flights.expedia.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.LocalLinks')">Low Cost Flights</a></li>
+                <li><a class="footer-link" href="http://thingstodo.expedia.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.LocalLinks')">Things to Do</a></li>
+                <li><a class="footer-link" href="http://hotels.expedia.com/resorts/" onclick="xp.nav.trackAnalytics(this,'a','Footer.LocalLinks')">Resorts</a></li>
+                <li><a class="footer-link" href="http://rental-cars.expedia.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.LocalLinks')">Airport Rental Cars</a></li>
+                <li><a class="footer-link" href="http://www.expedia.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations" onclick="xp.nav.trackAnalytics(this,'a','Footer.Sitemaps')">Hotels Sitemap</a></li>
+                <li><a class="footer-link" href="http://www.expedia.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations" onclick="xp.nav.trackAnalytics(this,'a','Footer.Sitemaps')">Flights Sitemap</a></li>
+                <li><a class="footer-link" href="http://www.expedia.com/United-States-Of-America.d201.Destination-Travel-Guide" onclick="xp.nav.trackAnalytics(this,'a','Footer.Sitemaps')">Vacations Sitemap</a></li>
+                <li><a class="footer-link" href="http://www.expedia.com/Destinations-In-United-States-Of-America.d201.Car-Rental-Destinations" onclick="xp.nav.trackAnalytics(this,'a','Footer.Sitemaps')">Rental Cars Sitemap</a></li>
+                <li><a class="footer-link" href="http://cruise.expedia.com/USCruises.aspx" onclick="xp.nav.trackAnalytics(this,'a','Footer.Sitemaps')">Cruises Sitemap</a></li>
+            </ul>
+        </div>
+        
+        <div id="other-partner-links">
+        <h6>Expedia Partners</h6>
+            <ul id="other-partner-links" class="other-links">
+                <li><a class="footer-link" href="http://egencia.com/en/why-egencia/understanding-business-travel-management/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Egencia Business Travel</a></li>
+                <li><a class="footer-link" href="http://www.hotels.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Hotels.com</a></li>
+                <li><a class="footer-link" href="http://www.tripadvisor.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">TripAdvisor</a></li>
+                <li><a class="footer-link" href="http://www.venere.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Venere</a></li>
+                <li><a class="footer-link" href="http://www.hotwire.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Hotwire</a></li>
+                <li><a class="footer-link" href="http://www.classicvacations.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">ClassicVacations.com</a></li>
+                <li><a class="footer-link" href="http://www.bloglines.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Bloglines</a></li>
+                <li><a class="footer-link" href="http://www.carrentals.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">CarRentals.com</a></li>
+                <li><a class="footer-link" href="http://www.citysearch.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">CitySearch</a></li>
+                <li><a class="footer-link" href="http://www.evite.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Evite</a></li>
+                <li><a class="footer-link" href="http://www.gifts.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Gifts</a></li>
+                <li><a class="footer-link" href="http://www.lendingtree.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Lending Tree</a></li>
+                <li><a class="footer-link" href="http://www.match.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Match</a></li>
+                <li><a class="footer-link" href="http://www.hsn.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Online Shopping</a></li>
+                <li><a class="footer-link" href="http://www.pronto.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Pronto</a></li>
+                <li><a class="footer-link" href="http://www.servicemagic.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">ServiceMagic</a></li>
+                <li><a class="footer-link" href="http://www.shoebuy.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Shoes</a></li>
+                <li><a class="footer-link" href="http://www.thedailybeast.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">The Daily Beast</a></li>
+                <li><a class="footer-link" href="http://www.ticketweb.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">TicketWeb</a></li>
+                <li><a class="footer-link" href="http://www.travel-ticker.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Travel Ticker</a></li>
+                <li><a class="footer-link" href="http://www.cruiseshipcenters.com/" onclick="xp.nav.trackAnalytics(this,'a','Footer.Epartners')">Expedia CruiseShipCenters</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</li>
+</ul>
+<div id="legal" class="legal">Expedia, Inc. is not responsible for content on external Web sites. ©2013 Expedia, Inc. All rights reserved.</div>
+</div>
+</div>
+</div>
+<!-- end expedia footer -->
+
+<img src="http://rtd.tubemogul.com/stats/1/conv?cpk=336GEVgYFnG2xCIwk9Ag&cak=NR8KQ8BretPQuFfheihS" />
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40213467-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- BEGIN OMNITURE TRACKING -->
+<script language="javascript">
+	s_account = 'expedia1';
+</script>
+<script language="javascript" type="text/javascript" src="http://www.expedia.com/static/default/default/scripts/siteAnalytics.js"></script>
+<script language="javascript">
+	s_exp.pageName = 'BOLT-ON:ViewFinder:TADG';
+	s_exp.currencyCode = 'USD';
+	s_exp.channel = 'BOLT-ON';
+	s_exp.hier1 = 'BOLT-ON ViewFinder';
+</script>
+<script language="javascript" type="text/javascript">
+	var s_code=s_exp.t();if(s_code)document.write(s_code);
+</script>
+
+<!-- END OMNITURE TRACKING -->
+</div>
+</body>
+</html>
